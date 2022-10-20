@@ -10,7 +10,7 @@ public class App {
         Scanner sc = new Scanner(System.in);
         if(facade.login()){
             menu.showMenu();
-            m.showMeatmenu();
+            m.showMenu();
 
             
         }
