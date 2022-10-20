@@ -5,8 +5,11 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws FileNotFoundException, IOException {
         Facade facade = new Facade();
+        ProduceProductMenu menu = new ProduceProductMenu();
         Scanner sc = new Scanner(System.in);
-        facade.login();
+        if(facade.login()){
+            menu.showMenu();
+        }
 
 
     }
