@@ -7,29 +7,6 @@ import java.util.StringTokenizer;
 public class MeatProductMenu implements ProductMenu {
 
 	public void showMenu() {
-
-	}
-
-	public void showAddButton() {
-
-	}
-
-	public void showViewButton() {
-
-	}
-
-	public void showRadioButton() {
-
-	}
-
-	public void showLabels() {
-
-	}
-
-	public void showComboxes() {
-
-	}
-	public void showMeatmenu(){
 		try {
 			FileReader f = new FileReader("C:\\Users\\rorugan2\\Downloads\\515 files\\ProductInfo.txt");
 			BufferedReader br = new BufferedReader(f);
@@ -54,6 +31,32 @@ public class MeatProductMenu implements ProductMenu {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}	
+	
+
+
 	}
+
+	public void showAddButton() {
+
+	}
+
+	public void showViewButton() {
+
+	}
+
+	public void showRadioButton() {
+
+	}
+
+	public void showLabels() {
+
+	}
+
+	public void showComboxes() {
+
+	}
+	
+		
+	
 
 }
