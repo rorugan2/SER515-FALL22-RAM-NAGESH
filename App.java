@@ -27,6 +27,7 @@ public class App {
             }
             else{System.out.println("invalid option");}
                System.out.println("persons product information");
+               System.out.println("factory design pattern implemented");
                p.showMenu();
                System.out.println(" ");
                System.out.println("seller selling menu");
