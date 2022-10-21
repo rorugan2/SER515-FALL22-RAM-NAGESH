@@ -11,6 +11,8 @@ public class ProduceProductMenu implements ProductMenu {
 			try {
 				FileReader f = new FileReader("C:\\Users\\rorugan2\\Downloads\\515 files\\ProductInfo.txt");
 				BufferedReader br = new BufferedReader(f);
+				System.out.println("produce product menu");
+				int i=0;
 				String s = br.readLine();
 				while (s!=null){
 					StringTokenizer st = new StringTokenizer(s,":");
@@ -19,8 +21,9 @@ public class ProduceProductMenu implements ProductMenu {
 						String value = st.nextToken();
 						if(product.equals("Produce"))
 						{
+							i=i+1;
+							System.out.println(i+" "+product +":"+value);
 							
-							System.out.println(product +":"+value);
 						}
 						
 					}
