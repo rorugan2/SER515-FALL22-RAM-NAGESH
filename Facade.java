@@ -15,16 +15,18 @@ public class Facade {
 
 	public boolean login() throws FileNotFoundException, IOException{
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Select buyer or seller");
-		String ind=sc.next();
+		System.out.println("facade pattern implemented");
+		System.out.println("Select login");
+		System.out.println("1. Buyer 2. Seller");
+		int in=sc.nextInt();
 		boolean bool1 = false;
-		if(ind.equals("buyer"))
+		if(in == 1)
 		{
 	     FileReader f = new FileReader("C:\\Users\\rorugan2\\Downloads\\515 files\\BuyerInfo.txt");
 		 BufferedReader br = new BufferedReader(f);
 		 String username,password;
 		 boolean bool = false;
-		 System.out.println("Enter the username :");
+		 System.out.println("Enter the buyer username :");
 		 username = sc.next();
 		 String s = br.readLine();
 		 while(s != null){
@@ -51,13 +53,13 @@ public class Facade {
 		 if(!bool) System.out.println("user not found");
         return bool;
 		}
-		else if(ind.equals("seller"))
+		else if(in == 2)
 		{
 			FileReader f = new FileReader("C:\\Users\\rorugan2\\Downloads\\515 files\\SellerInfo.txt");
 			BufferedReader br = new BufferedReader(f);
 			String username,password;
 			boolean bool = false;
-			System.out.println("Enter the username :");
+			System.out.println("Enter the seller username :");
 			username = sc.next();
 			String s = br.readLine();
 			while(s != null){
@@ -113,6 +115,7 @@ public class Facade {
 	
 
 	public void addTrading() {
+		
 
 	}
 
