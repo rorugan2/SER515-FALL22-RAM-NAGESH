@@ -10,16 +10,20 @@ public class MeatProductMenu implements ProductMenu {
 		try {
 			FileReader f = new FileReader("C:\\Users\\rorugan2\\Downloads\\515 files\\ProductInfo.txt");
 			BufferedReader br = new BufferedReader(f);
+			System.out.println("meat product menu");
+			int i=0;
 			String s = br.readLine();
 			while (s!=null){
 				StringTokenizer st = new StringTokenizer(s,":");
 				while(st.hasMoreTokens()){
+					
 					String product = st.nextToken();
 					String value = st.nextToken();
 					if(product.equals("Meat"))
 					{
-						System.out.println("meat product menu");
-						System.out.println(product +":"+value);
+						i=i+1;
+						System.out.println(i+" "+product +":"+value);
+
 					}
 					
 				}
