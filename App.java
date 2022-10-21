@@ -9,16 +9,31 @@ public class App {
         MeatProductMenu m = new MeatProductMenu();
         Person p = new Person();
         Seller s = new Seller();
+        Buyer b = new Buyer();
         Scanner sc = new Scanner(System.in);
         if(facade.login()){
-            System.out.println(" ");
-            menu.showMenu();
-            System.out.println(" ");
-            m.showMenu();
-            System.out.println(" ");
-            p.showMenu();
-            System.out.println(" ");
-            s.showMenu();
+            System.out.println("Bridge pattern implemented");
+            System.out.println("1. meat menu 2. produce menu");
+            System.out.println("enter the menu option");
+            int option = sc.nextInt();
+            if(option ==1){
+                m.showMenu();
+                //System.out.println("enter the number of item to add to cart");
+               // int n = sc.nextInt();
+
+            }
+            else if (option == 2){
+                menu.showMenu();
+            }
+            else{System.out.println("invalid option");}
+               System.out.println("persons product information");
+               p.showMenu();
+               System.out.println(" ");
+               System.out.println("seller selling menu");
+               s.showMenu();
+               System.out.println("Buyer interested items ");
+               b.showMenu();
+
 
             
         }
